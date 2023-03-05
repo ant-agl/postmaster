@@ -3,7 +3,7 @@ async function api(file, method, params={}) {
     let xhr = new XMLHttpRequest();
 
     if (method == 'POST') {
-      xhr.open(method, 'https://port25.ru/toolbox/' + file);
+      xhr.open(method, 'https://port25.ru/toolbox/postmasterPHP/' + file);
       xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
 
       let json = JSON.stringify(params);
@@ -17,7 +17,7 @@ async function api(file, method, params={}) {
         get += key + '=' + params[key];
       }
 
-      xhr.open(method, 'https://port25.ru/toolbox/' + file + get);
+      xhr.open(method, 'https://port25.ru/toolbox/postmasterPHP/' + file + get);
       xhr.send();
     }
 

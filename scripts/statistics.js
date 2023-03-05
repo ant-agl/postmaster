@@ -149,7 +149,7 @@ $('.dropdown').on('click', '.dropdown-item', function() {
 $('.filter .link').on('click', function() {
   let period = $(this).data('period');
   let client_id = $('.dropdown-mail .dropbtn').text();
-  window.location.href = `domain.html?mail=${client_id}&period=${period}`;
+  window.location.href = `domain.php?mail=${client_id}&period=${period}`;
 });
 
 $('.pagination').on('click', 'a', function() {
