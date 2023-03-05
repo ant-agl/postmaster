@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foggy Star</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <section class="section baner">
+        <div class="container">
+            <div class="baner__hero">
+                <img src="../img/logo.png" alt="Foggy Star" class="baner__logo">
+                <h1 class="baner__title">Spin the wheel and win a special bonus!</h1>
+                <div class="spinner" id="spinner">
+                    <img src="../img/wheel/bg.png" class="spinner__bg">
+                    <img src="../img/wheel/content.png" class="spinner__hero">
+                    <img src="../img/wheel/section.png" class="spinner__section">
+                    <img src="../img/wheel/pointer.png" class="spinner__pointer">
+                    <div class="spinner__btn-wrap">
+                        <a data-lang="en" class="btn spinner__btn" id="spinner-btn" href="#">spin</a>                       
+                    </div>
+                </div>
+                <div class="baner__list">
+                    <img src="../img/partners/visa.png" alt="visa" class="baner__partner baner-visa">
+                    <img src="../img/partners/mc.png" alt="mastercard" class="baner__partner baner-mc">
+                    <img src="../img/partners/mifinity.png" alt="mifinity" class="baner__partner baner-mifinity">
+                    <img src="../img/partners/scrill.png" alt="scrill" class="baner__partner baner-scrill">
+                    <img src="../img/partners/geton.png" alt="geton" class="baner__partner baner-geton">
+                    <img src="../img/partners/wallet.png" alt="wallet" class="baner__partner baner-wallet">
+                    <img src="../img/partners/btc.png" alt="btc" class="baner__partner baner-btc">
+                    <img src="../img/partners/eth.png" alt="eth" class="baner__partner baner-eth">
+                </div>
+        </div>
+    </section>
+    <div class="modal contacts">
+        <div class="modal__hero">
+            <div class="modal__cont">                          
+                <h2 class="modal__title ">Congratulations! <br>
+                    200% Bonus + 50 FS up to <br>
+                    1,000 EUR</h2>
+                <p class="modal__text">Promo Code</p>
+                <div class="bonus_cont " onclick="copyToClipboard()">
+                    <p id="item-to-copy" class="bonus_text">200BONUS</p>
+                    <img src="../img/copy.png" alt="">
+                </div>
+                <a data-lang="en" class="btn get_bonus" href="#">Get bonus</a>  
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../main.js"></script>
+</html>
